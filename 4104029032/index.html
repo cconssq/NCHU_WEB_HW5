@@ -1,0 +1,58 @@
+<html>
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html;">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+  body {color: blue;
+  background-color: gray }
+table { 
+  border:#0000FF 5px solid; 
+  font-family: arial; 
+  font-size:25px; }
+th { 
+  background-color:yellow; } 
+td { 
+  border-bottom:1 solid #000000; } 
+.fail { 
+  color:#FF0000; }  
+    </style>
+</head>
+
+<body>
+<h2 align=center>自我介紹</h2>
+<hr>
+<form name="form" action="main.jsp" method="GET" >
+	<p>名字：<input name="name" type=text size=10 maxlength=20></p>
+	<p>性別：<input name="sex" type=radio value="男">男
+		<input name="sex" type=radio value="女" >女</p>
+	<p>生日：<input name="birth" type="date"></p>
+	<p>學歷：
+        <select name="school">
+          <option value="高中">高中</option>
+          <option value="大學">大學</option>
+		  <option value="研究所以上">研究所以上</option>
+        </select><p>
+	<p>嗜好:
+	    <input type="checkbox" name="ho" value="小說">小說
+        <input type="checkbox" name="ho" value="遊戲">遊戲
+        <input type="checkbox" name="ho" value="運動">運動
+        <input type="checkbox" name="ho" value="電影">電影
+	</p>
+	<p>希望前往旅遊的國家:
+	     <select name="country" size="4" multiple>
+          <option value="日本">日本</option>
+          <option value="美國">美國</option>
+		  <option value="歐洲">歐洲</option>
+		  <option value="俄羅斯">俄羅斯</option>
+        </select>
+	<p>想說:</p>
+	<p><textarea name="index" cols=80 rows=10 ></textarea></p>
+	<p><input type="submit" value="送出"></p>
+</form>
+<hr>
+</body>
+</html>
